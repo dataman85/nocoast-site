@@ -5,108 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Support — No Coast</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            background-color: #000;
-            color: #e0e0e0;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
-            line-height: 1.7;
-            padding: 3rem 1.5rem;
-            max-width: 680px;
-            margin: 0 auto;
-        }
-
-        a {
-            color: #E8622A;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        .back-link {
-            display: inline-block;
-            margin-bottom: 2rem;
-            font-size: 0.95rem;
-            color: #E8622A;
-        }
-
-        h1 {
-            font-size: 2.2rem;
-            font-weight: 700;
-            color: #fff;
-            margin-bottom: 0.5rem;
-        }
-
-        h2 {
-            font-size: 1.4rem;
-            font-weight: 600;
-            color: #fff;
-            margin-top: 2.5rem;
-            margin-bottom: 1rem;
-        }
-
-        p {
-            margin-bottom: 1rem;
-            color: #b0b0b0;
-        }
-
-        .contact-box {
-            background: #111;
-            border: 1px solid #222;
-            border-radius: 12px;
-            padding: 1.5rem;
-            margin: 1.5rem 0;
-        }
-
-        .contact-box p {
-            margin-bottom: 0.5rem;
-        }
-
-        .contact-box p:last-child {
-            margin-bottom: 0;
-        }
-
-        .faq-item {
-            margin-bottom: 1.5rem;
-        }
-
-        .faq-item h3 {
-            font-size: 1.1rem;
-            font-weight: 600;
-            color: #fff;
-            margin-bottom: 0.4rem;
-        }
-
-        .faq-item p {
-            color: #999;
-            font-size: 0.95rem;
-        }
-
-        hr {
-            border: none;
-            border-top: 1px solid #1a1a1a;
-            margin: 2rem 0;
-        }
-
-        .footer {
-            margin-top: 3rem;
-            padding-top: 1.5rem;
-            border-top: 1px solid #1a1a1a;
-            font-size: 0.85rem;
-            color: #555;
-        }
-
-        .footer a {
-            color: #777;
-        }
-    </style>
+  :root {
+    --bg: #060609;
+    --card: #16161F;
+    --accent: #FF6B35;
+    --white: #F9FAFB;
+    --dim: #D1D5DB;
+    --gray: #6B7280;
+    --gray-light: #9CA3AF;
+    --border: rgba(255,255,255,0.06);
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--dim);
+    font-family: 'DM Sans', -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.7;
+  }
+  .container {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 60px 24px 80px;
+  }
+  .back-link {
+    display: inline-block;
+    color: var(--accent);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 32px;
+  }
+  .back-link:hover { text-decoration: underline; }
+  h1 {
+    font-size: 32px;
+    font-weight: 900;
+    color: var(--white);
+    margin-bottom: 8px;
+    letter-spacing: -0.02em;
+  }
+  .date {
+    font-size: 13px;
+    color: var(--gray);
+    margin-bottom: 40px;
+  }
+  h2 {
+    font-size: 18px;
+    font-weight: 800;
+    color: var(--white);
+    margin-top: 36px;
+    margin-bottom: 12px;
+  }
+  p {
+    margin-bottom: 16px;
+    font-size: 15px;
+  }
+  a { color: var(--accent); }
+</style>
 </head>
 <body>
     <a href="https://sevennotesapps.com/index.html" class="back-link">← Back to No Coast</a>
