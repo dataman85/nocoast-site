@@ -75,50 +75,59 @@
 <div class="container">
   <a href="index.html" class="back-link">← Back to No Coast</a>
   <h1>Privacy Policy</h1>
-  <p class="date">Effective date: May 19, 2026</p>
+  <p class="date">Effective date: [release date], 2026</p>
 
-  <p>No Coast ("the App") is operated by Seven Notes Private Limited ("we", "us", "our"). This privacy policy explains how we handle information when you use our iOS application.</p>
+  <p>No Coast ("the App") is operated by Seven Notes Private Limited ("we", "us", "our"). This policy explains what the App collects, why, and what you can do about it. No Coast is for adults 18 and over.</p>
 
-  <h2>Information We Collect</h2>
-  <p>No Coast is designed with privacy in mind. Most of your data stays on your device. The main exception is the onboarding interview described below, which is processed on our servers so the App can personalize itself for you. We never ask for your name, email address, or other directly identifying information.</p>
+  <h2>No Account Details</h2>
+  <p>We never ask for your name, email address, or phone number, and you don't sign in. The first time you open the App, it creates a random identifier and a secret for your device. They are not linked to your name, your Apple ID, or any hardware identifier.</p>
 
-  <p><strong>Data stored on your device:</strong> Your notification schedule, check-in responses ("showed up" or "drifted"), streak data, and custom check-ins are stored only in your device's local storage. They are not transmitted to us or any third party.</p>
+  <h2>What We Store on Our Servers</h2>
+  <p>No Coast is a weekly coach, so it needs to remember what you tell it. We store your goal, your conversations with the coach, the moves you set, what you report each day and each week, and the record built from them. This content is encrypted with a key unique to your account.</p>
+  <p>We also store your coaching schedule and settings (such as your check-in day, time, and time zone) and a small amount of technical data to keep the service running and prevent abuse.</p>
+  <p>Because the coach is open-ended, please don't share information you wouldn't want processed as described here, such as financial or health details.</p>
 
-  <p><strong>Onboarding interview and personalized content:</strong> During onboarding, No Coast guides you through a short conversational interview to help you define your goal. The messages you write during this interview, and the goal summary created from them, are sent to our servers and to our AI provider to generate your personalized goal summary and check-in messages. Because the interview is open-ended, please do not enter information you would not want processed off your device, such as financial, health, or other sensitive personal details. To deliver this personalized content — and to restore it if you reinstall the App — we create a random identifier for your device the first time you open the App. This identifier is not linked to your name, your Apple ID, or any hardware identifier; it exists only to associate your generated content with your device. We also store a small amount of technical data, such as how many times the interview has been run, to prevent abuse of the service.</p>
+  <h2>How the AI Coach Uses Your Words</h2>
+  <p>The coach is powered by Anthropic's AI models. What you write to the coach, along with the earlier context it needs (your goal and past weeks), is sent to Anthropic's API to produce the coach's replies. Anthropic does not use data sent through its API to train its models.</p>
+  <p>To help the coach remember earlier weeks, Cloudflare Workers AI converts your lines into numerical representations ("embeddings"). These are stored in Cloudflare Vectorize, labeled only with your random account identifier and coaching round.</p>
 
-  <p><strong>Subscription data:</strong> If you subscribe to No Coast Pro, your purchase is processed by Apple through the App Store. We use RevenueCat, a third-party service, to manage subscription status. RevenueCat receives an anonymous identifier linked to your App Store purchase to verify your subscription. We do not receive your name, email, payment method, or Apple ID.</p>
+  <h2>Notifications</h2>
+  <p>If you allow notifications, the App sends us a push token so the coach can remind you. Reminders are delivered through Expo's push notification service and may include the words of the move you set.</p>
 
-  <p><strong>Anonymous analytics:</strong> We use PostHog to collect anonymous usage data to help us improve the app. This includes events like onboarding completion, check-in responses (without message content), and feature usage. No personally identifiable information is collected. You cannot be identified from this data.</p>
+  <h2>Helping Improve the Coach</h2>
+  <p>Settings has a switch called "Help improve the coach." It is off unless you turn it on. When it is on, the founder may read your conversations with the coach to improve it. You can turn it off at any time.</p>
 
-  <h2>Information We Do Not Collect</h2>
-  <p>We do not ask for your name, email address, phone number, location, contacts, photos, or browsing history. We do not require you to create an account or sign in, and we have no way to identify you personally from the information we process.</p>
+  <h2>Subscriptions</h2>
+  <p>Purchases are processed by Apple through the App Store. We use RevenueCat to manage subscription status. RevenueCat receives an anonymous identifier linked to your App Store purchase. We do not receive your name, email, payment method, or Apple ID.</p>
 
-  <h2>How We Use Information</h2>
-  <p>The interview content you provide is used only to generate your personalized goal summary and check-in messages. Subscription data is used solely to verify your Pro subscription status and provide you with the features you've paid for. Anonymous analytics data is used to understand how people use the app so we can make it better. We do not use any of this information for advertising, and we do not sell it.</p>
+  <h2>Analytics</h2>
+  <p>We use PostHog to collect anonymous usage events, such as finishing onboarding, to understand how the App is used. These events do not include what you write to the coach.</p>
+
+  <h2>What We Don't Do</h2>
+  <p>We do not sell, rent, or share your information for advertising or marketing. We do not show ads. The services listed below process data only to run the App on our behalf.</p>
 
   <h2>Third-Party Services</h2>
-  <p><strong>RevenueCat:</strong> Manages subscription verification. Their privacy policy is available at <a href="https://www.revenuecat.com/privacy">revenuecat.com/privacy</a>.</p>
-  <p><strong>Anthropic:</strong> Provides the AI models that power the onboarding interview and generate your personalized content. The messages you write during the interview are sent to Anthropic's API for processing. Anthropic does not use data submitted through its API to train its models. Their privacy policy is available at <a href="https://www.anthropic.com/legal/privacy">anthropic.com/legal/privacy</a>.</p>
-  <p><strong>Cloudflare:</strong> Hosts the servers that process the interview and store your personalized content. Their privacy policy is available at <a href="https://www.cloudflare.com/privacypolicy/">cloudflare.com/privacypolicy</a>.</p>
-  <p><strong>PostHog:</strong> Provides anonymous analytics. Their privacy policy is available at <a href="https://posthog.com/privacy">posthog.com/privacy</a>.</p>
-  <p><strong>Apple:</strong> Processes all payments through the App Store. Apple's privacy policy is available at <a href="https://www.apple.com/legal/privacy/">apple.com/legal/privacy</a>.</p>
+  <p><strong>Anthropic:</strong> AI models for the coach. <a href="https://www.anthropic.com/legal/privacy">anthropic.com/legal/privacy</a></p>
+  <p><strong>Cloudflare:</strong> Hosting, database, and embeddings. <a href="https://www.cloudflare.com/privacypolicy/">cloudflare.com/privacypolicy</a></p>
+  <p><strong>Expo:</strong> Push notification delivery. <a href="https://expo.dev/privacy">expo.dev/privacy</a></p>
+  <p><strong>RevenueCat:</strong> Subscription status. <a href="https://www.revenuecat.com/privacy">revenuecat.com/privacy</a></p>
+  <p><strong>PostHog:</strong> Anonymous analytics. <a href="https://posthog.com/privacy">posthog.com/privacy</a></p>
+  <p><strong>Apple:</strong> Payments. <a href="https://www.apple.com/legal/privacy/">apple.com/legal/privacy</a></p>
 
-  <h2>Data Sharing</h2>
-  <p>We do not sell, rent, or share your personal information with anyone. We do not display ads. We do not use your data for marketing purposes. The third-party services listed above process data only to provide the App's functionality on our behalf.</p>
+  <h2>Keeping and Deleting Your Data</h2>
+  <p>We keep your data for as long as you have an account. You can delete it at any time in the App: Settings → Delete account. This deletes everything we hold about you right away, including the embeddings, and cannot be undone. Deleting your account does not cancel an App Store subscription; cancel that in Settings → Apple ID → Subscriptions.</p>
+  <p>If you uninstall the App without deleting your account, your data stays on our servers. To have it deleted, email us at <a href="mailto:hello@sevennotesapps.com">hello@sevennotesapps.com</a>.</p>
+  <p>If you used an earlier version of No Coast, its onboarding data still expires as that version promised: the interview transcript after 7 days, and the goal summary and messages after 12 months. If you update, a copy of your goal summary may be kept, encrypted, with your new account so the coach can start from it; it is deleted when you delete your account.</p>
+  <p>Anonymous analytics data is kept for up to 12 months.</p>
 
-  <h2>Data Retention and Deletion</h2>
-  <p>Data stored on your device is removed when you uninstall No Coast.</p>
-  <p>For data on our servers: the interview transcript is automatically deleted after 7 days. Your generated goal summary and check-in messages are retained for up to 12 months and are then automatically deleted. Because this content is tied only to a random device identifier and contains no identifying information, uninstalling the App dissociates you from it and it will expire on its own. If you would like us to delete your server-stored content sooner, contact us at <a href="mailto:hello@sevennotesapps.com">hello@sevennotesapps.com</a>.</p>
-  <p>Anonymous analytics data is retained for up to 12 months and cannot be linked back to you.</p>
-
-  <h2>Children's Privacy</h2>
-  <p>No Coast is not directed at children under the age of 13. We do not knowingly collect information from children.</p>
+  <h2>Age</h2>
+  <p>No Coast is intended for adults 18 and over. We do not knowingly collect information from anyone under 18. If you believe someone under 18 is using the App, contact us and we will delete their data.</p>
 
   <h2>Changes to This Policy</h2>
-  <p>We may update this privacy policy from time to time. We will notify you of any changes by posting the new privacy policy on this page and updating the effective date.</p>
+  <p>We may update this policy from time to time. We will post the new policy on this page and update the effective date.</p>
 
   <h2>Contact Us</h2>
-  <p>If you have questions about this privacy policy, contact us at <a href="mailto:hello@sevennotesapps.com">hello@sevennotesapps.com</a>.</p>
+  <p>Questions about this policy: <a href="mailto:hello@sevennotesapps.com">hello@sevennotesapps.com</a>.</p>
 </div>
 </body>
 </html>
